@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - zaproxy > request > hawk:
+        patched: '2018-02-22T04:52:24.395Z'
+  'npm:qs:20140806-1':
+    - zaproxy > request > qs:
+        patched: '2018-02-22T04:52:24.395Z'
+  'npm:request:20160119':
+    - zaproxy > request:
+        patched: '2018-02-22T04:52:24.395Z'
