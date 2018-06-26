@@ -10,7 +10,9 @@
     "test": "echo \"Todo: Create tests.\" && exit 0",
     "pretest": "npm run lint",
     "debug": "node --inspect-brk ./index.js",
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "pre-commit": [
     "test"
@@ -44,7 +46,8 @@
     "purpleteam-logger": "git+ssh://github.com/binarymist/purpleteam-logger.git",
     "selenium-webdriver": "^3.6.0",
     "susie": "^3.0.0-alpha",
-    "zaproxy": "git+ssh://github.com/binarymist/zaproxy-wip.git"
+    "zaproxy": "git+ssh://github.com/binarymist/zaproxy-wip.git",
+    "snyk": "^1.85.0"
   },
   "//Install ajv --save-dev": "gets rid of npm warning.",
   "devDependencies": {
@@ -53,5 +56,6 @@
     "eslint-plugin-import": "^2.9.0",
     "npm-check": "^5.5.2",
     "pre-commit": "^1.2.2"
-  }
+  },
+  "snyk": true
 }
